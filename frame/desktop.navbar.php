@@ -24,7 +24,7 @@
     </ul-->
 </li>
 <li class="dropdown">
-    <a data-toggle="dropdown" class="dropdown-toggle disabled" href="#">professional studies</a>
+    <a data-toggle="dropdown" class="dropdown-toggle disabled" href="#">Professional Studies</a>
     <!--ul class="dropdown-menu">
         <li><a href="blog.html">Blog Grid View</a></li>
         <li><a href="blog-detail.html">Blog Detail</a></li>
