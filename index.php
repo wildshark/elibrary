@@ -35,7 +35,7 @@ if(!isset($_POST['submit'])){
                    switch($_REQUEST['cata']){
                         
                         case"sst";
-                            $collection = json_decode(ProcessFile("book/sst/*"),true);
+                            $collection = json_decode(ProcessFile("sst/ebook/*"),true);
                             require_once($_FRAME['book']);
                         break;
                    }

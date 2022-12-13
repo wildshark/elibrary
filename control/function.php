@@ -25,17 +25,20 @@ function ProcessFile($path=null){
         foreach($fileList as $filename){
             $md5 = md5($filename);
             if(is_file($filename)){
+                
                 $data = explode("/",$filename);
                 $root = $data[0];
                 $catagory = $data[1];
                 $doc = $data[2];
-                $title = explode(".",$doc);
-                $find = ["-","_"];
+                
+                $doc = explode(".",$doc);
+                $find = ["-","_","$","%"];
                 $replace = " ";
-                $title = str_replace($find,$replace,$title);
+                $title = str_replace($find,$replace,$doc);
                 $book_title = ucfirst($title[0]);
                 $book_mime = strtolower($title[1]);                        
             } 
+
             $collection[] = array(
                 "hash" => $md5,
                 "title" => $book_title,
